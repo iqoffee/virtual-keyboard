@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const config = {
   entry: './src/js/index.js',
@@ -32,6 +33,7 @@ const config = {
       favicon: './src/favicon.ico',
       template: './src/index.html',
     }),
+    new ESLintPlugin(),
   ],
 };
 
