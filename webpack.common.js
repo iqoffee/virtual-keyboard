@@ -33,7 +33,6 @@ const config = {
       favicon: './src/favicon.ico',
       template: './src/index.html',
     }),
-    new ESLintPlugin(),
   ],
 };
 
