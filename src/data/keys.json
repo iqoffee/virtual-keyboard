@@ -319,11 +319,11 @@
       }
     },
     {
-      "key": "Enter",
-      "keyUp": false,
-      "keyCode": 13,
+      "key": "\\",
+      "keyUp": "|",
+      "keyCode": 220,
       "capsLock": false,
-      "code": "Enter",
+      "code": "Backslash",
       "ru": false
     }
   ],
@@ -469,11 +469,11 @@
       }
     },
     {
-      "key": "\\",
-      "keyUp": "|",
-      "keyCode": 220,
+      "key": "Enter",
+      "keyUp": false,
+      "keyCode": 13,
       "capsLock": false,
-      "code": "Backslash",
+      "code": "Enter",
       "ru": false
     }
   ],
@@ -615,7 +615,7 @@
   ],
   [
     {
-      "key": "Control",
+      "key": "Ctrl",
       "keyUp": false,
       "keyCode": 17,
       "capsLock": false,
@@ -663,7 +663,7 @@
       "ru": false
     },
     {
-      "key": "ArrowLeft",
+      "key": "&larr;",
       "keyUp": false,
       "keyCode": 37,
       "capsLock": false,
@@ -671,7 +671,7 @@
       "ru": false
     },
     {
-      "key": "ArrowUp",
+      "key": "&uarr;",
       "keyUp": false,
       "keyCode": 38,
       "capsLock": false,
@@ -679,7 +679,7 @@
       "ru": false
     },
     {
-      "key": "ArrowDown",
+      "key": "&darr;",
       "keyUp": false,
       "keyCode": 40,
       "capsLock": false,
@@ -687,7 +687,7 @@
       "ru": false
     },
     {
-      "key": "ArrowRight",
+      "key": "&rarr;",
       "keyUp": false,
       "keyCode": 39,
       "capsLock": false,
