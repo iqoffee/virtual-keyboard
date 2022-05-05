@@ -1,4 +1,104 @@
-h1 {
-  color: white;
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keyboard {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #D9CE9A;
+}
+
+.keys-row {
+  display: grid;
+  grid-gap: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  &-0 {
+    grid-template-columns: repeat(13, 1fr) 2fr;
+    grid-template-rows: 50px;
+
+    .key:last-child{
+      justify-content: end;
+      padding-right: 5px;
+    }
+  }
+
+  &-1 {
+    grid-template-columns: 2fr repeat(13, 1fr);
+    grid-template-rows: 50px;
+
+    .key:first-child {
+      justify-content: start;
+      padding-left: 5px;
+    }
+  }
+
+  &-2 {
+    grid-template-columns: 2.3fr repeat(11, 1fr) 2.3fr;
+    grid-template-rows: 50px;
+
+    .key:first-child {
+      justify-content: start;
+      padding-left: 5px;
+    }
+
+    .key:last-child{
+      justify-content: end;
+      padding-right: 5px;
+    }
+  }
+
+  &-3 {
+    grid-template-columns: 2.5fr repeat(10, 1fr) 2.5fr;
+    grid-template-rows: 50px;
+
+    .key:first-child {
+      justify-content: start;
+      padding-left: 5px;
+    }
+
+    .key:last-child{
+      justify-content: end;
+      padding-right: 5px;
+    }
+  }
+
+  &-4 {
+    grid-template-columns: repeat(2, 1fr) 1.5fr 5fr 1.5fr repeat(4, 1fr);
+    grid-template-rows: 50px;
+
+    .key:first-child {
+      justify-content: start;
+      padding-left: 5px;
+    }
+  }
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  cursor: pointer;
+  background-color: #F28705;
+  border: 2px solid #D96704;
+}
+
+.arrows-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .key {
+    height: 100%;
+  }
+
+  .key:first-child {
+    justify-content: center;
+    margin-bottom: 2px;
+  }
 }
