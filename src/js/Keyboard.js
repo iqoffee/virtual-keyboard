@@ -5,10 +5,6 @@ export default class Keyboard {
     this.data = data;
   }
 
-  show() {
-    return this.data;
-  }
-
   init(node, lang) {
     this.data.forEach((arrOfkeys) => {
       const keysRow = document.createElement('div');
