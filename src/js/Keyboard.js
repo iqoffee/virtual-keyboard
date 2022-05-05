@@ -6,18 +6,30 @@ export default class Keyboard {
   }
 
   init(node, lang) {
-    this.data.forEach((arrOfkeys) => {
+    this.data.forEach((arrOfkeys, i) => {
       const keysRow = document.createElement('div');
+      keysRow.classList.add('keys-row', `keys-row-${i}`);
+
       arrOfkeys.forEach((keyFromArr) => {
         keysRow.appendChild(createKey(keyFromArr, lang));
       });
       node.appendChild(keysRow);
     });
+
+    const arrowUp = document.querySelector('[data-key-code="38"]');
+    const arrowDown = document.querySelector('[data-key-code="40"]');
+    const arrowRight = document.querySelector('[data-key-code="39"]');
+
+    const arrowsContainer = document.createElement('span');
+    arrowsContainer.classList.add('arrows-container');
+    arrowsContainer.appendChild(arrowUp);
+    arrowsContainer.appendChild(arrowDown);
+
+    arrowRight.before(arrowsContainer);
   }
 }
 
 function createKey(key, lang) {
-  console.log(key.capsLock);
   const keyElement = document.createElement('span');
 
   keyElement.classList.add('key');
@@ -29,7 +41,7 @@ function createKey(key, lang) {
   keyElement.dataset.capsLock = key.capsLock;
   keyElement.dataset.capsLockRu = key.ru ? key.ru.capsLock : null;
 
-  keyElement.innerText =
+  keyElement.innerHTML =
     lang === 'en' ? keyElement.dataset.key : keyElement.dataset.keyRu;
 
   return keyElement;
