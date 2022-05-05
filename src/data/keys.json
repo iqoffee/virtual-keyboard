@@ -8,7 +8,8 @@
       "code": "Backquote",
       "ru": {
         "key": "ё",
-        "keyUp": "Ё"
+        "keyUp": "Ё",
+        "capsLock": true
       }
     },
     {
@@ -19,7 +20,8 @@
       "code": "Digit1",
       "ru": {
         "key": "1",
-        "keyUp": "!"
+        "keyUp": "!",
+        "capsLock": false
       }
     },
     {
@@ -30,7 +32,8 @@
       "code": "Digit2",
       "ru": {
         "key": "2",
-        "keyUp": "\""
+        "keyUp": "\"",
+        "capsLock": false
       }
     },
     {
@@ -41,7 +44,8 @@
       "code": "Digit3",
       "ru": {
         "key": "3",
-        "keyUp": "№"
+        "keyUp": "№",
+        "capsLock": false
       }
     },
     {
@@ -52,7 +56,8 @@
       "code": "Digit4",
       "ru": {
         "key": "4",
-        "keyUp": ";"
+        "keyUp": ";",
+        "capsLock": false
       }
     },
     {
@@ -63,7 +68,8 @@
       "code": "Digit5",
       "ru": {
         "key": "5",
-        "keyUp": "%"
+        "keyUp": "%",
+        "capsLock": false
       }
     },
     {
@@ -74,7 +80,8 @@
       "code": "Digit6",
       "ru": {
         "key": "6",
-        "keyUp": ":"
+        "keyUp": ":",
+        "capsLock": false
       }
     },
     {
@@ -85,7 +92,8 @@
       "code": "Digit7",
       "ru": {
         "key": "7",
-        "keyUp": "?"
+        "keyUp": "?",
+        "capsLock": false
       }
     },
     {
@@ -96,7 +104,8 @@
       "code": "Digit8",
       "ru": {
         "key": "8",
-        "keyUp": "*"
+        "keyUp": "*",
+        "capsLock": false
       }
     },
     {
@@ -107,7 +116,8 @@
       "code": "Digit9",
       "ru": {
         "key": "9",
-        "keyUp": "("
+        "keyUp": "(",
+        "capsLock": false
       }
     },
     {
@@ -118,7 +128,8 @@
       "code": "Digit0",
       "ru": {
         "key": "0",
-        "keyUp": "\""
+        "keyUp": "\"",
+        "capsLock": false
       }
     },
     {
@@ -129,7 +140,8 @@
       "code": "NumpadSubtract",
       "ru": {
         "key": "-",
-        "keyUp": "_"
+        "keyUp": "_",
+        "capsLock": false
       }
     },
     {
@@ -140,7 +152,8 @@
       "code": "Equal",
       "ru": {
         "key": "=",
-        "keyUp": "+"
+        "keyUp": "+",
+        "capsLock": false
       }
     },
     {
@@ -169,7 +182,8 @@
       "code": "KeyQ",
       "ru": {
         "key": "й",
-        "keyUp": "Й"
+        "keyUp": "Й",
+        "capsLock": true
       }
     },
     {
@@ -180,7 +194,8 @@
       "code": "KeyW",
       "ru": {
         "key": "ц",
-        "keyUp": "Ц"
+        "keyUp": "Ц",
+        "capsLock": true
       }
     },
     {
@@ -191,7 +206,8 @@
       "code": "KeyE",
       "ru": {
         "key": "у",
-        "keyUp": "У"
+        "keyUp": "У",
+        "capsLock": true
       }
     },
     {
@@ -202,7 +218,8 @@
       "code": "KeyR",
       "ru": {
         "key": "к",
-        "keyUp": "К"
+        "keyUp": "К",
+        "capsLock": true
       }
     },
     {
@@ -213,7 +230,8 @@
       "code": "KeyT",
       "ru": {
         "key": "е",
-        "keyUp": "Е"
+        "keyUp": "Е",
+        "capsLock": true
       }
     },
     {
@@ -224,7 +242,8 @@
       "code": "KeyY",
       "ru": {
         "key": "н",
-        "keyUp": "Н"
+        "keyUp": "Н",
+        "capsLock": true
       }
     },
     {
@@ -235,7 +254,8 @@
       "code": "KeyU",
       "ru": {
         "key": "г",
-        "keyUp": "Г"
+        "keyUp": "Г",
+        "capsLock": true
       }
     },
     {
@@ -246,7 +266,8 @@
       "code": "KeyI",
       "ru": {
         "key": "ш",
-        "keyUp": "Ш"
+        "keyUp": "Ш",
+        "capsLock": true
       }
     },
     {
@@ -257,7 +278,8 @@
       "code": "KeyO",
       "ru": {
         "key": "щ",
-        "keyUp": "Щ"
+        "keyUp": "Щ",
+        "capsLock": true
       }
     },
     {
@@ -268,7 +290,8 @@
       "code": "KeyP",
       "ru": {
         "key": "з",
-        "keyUp": "З"
+        "keyUp": "З",
+        "capsLock": true
       }
     },
     {
@@ -279,7 +302,8 @@
       "code": "BracketLeft",
       "ru": {
         "key": "х",
-        "keyUp": "Х"
+        "keyUp": "Х",
+        "capsLock": true
       }
     },
     {
@@ -290,7 +314,8 @@
       "code": "BracketRight",
       "ru": {
         "key": "ъ",
-        "keyUp": "Ъ"
+        "keyUp": "Ъ",
+        "capsLock": true
       }
     },
     {
@@ -319,7 +344,8 @@
       "code": "KeyA",
       "ru": {
         "key": "ф",
-        "keyUp": "Ф"
+        "keyUp": "Ф",
+        "capsLock": true
       }
     },
     {
@@ -330,7 +356,8 @@
       "code": "KeyS",
       "ru": {
         "key": "ы",
-        "keyUp": "Ы"
+        "keyUp": "Ы",
+        "capsLock": true
       }
     },
     {
@@ -341,7 +368,8 @@
       "code": "KeyD",
       "ru": {
         "key": "в",
-        "keyUp": "В"
+        "keyUp": "В",
+        "capsLock": true
       }
     },
     {
@@ -352,7 +380,8 @@
       "code": "KeyF",
       "ru": {
         "key": "а",
-        "keyUp": "А"
+        "keyUp": "А",
+        "capsLock": true
       }
     },
     {
@@ -363,7 +392,8 @@
       "code": "KeyG",
       "ru": {
         "key": "п",
-        "keyUp": "П"
+        "keyUp": "П",
+        "capsLock": true
       }
     },
     {
@@ -374,7 +404,8 @@
       "code": "KeyH",
       "ru": {
         "key": "р",
-        "keyUp": "Р"
+        "keyUp": "Р",
+        "capsLock": true
       }
     },
     {
@@ -385,7 +416,8 @@
       "code": "KeyJ",
       "ru": {
         "key": "о",
-        "keyUp": "О"
+        "keyUp": "О",
+        "capsLock": true
       }
     },
     {
@@ -396,7 +428,8 @@
       "code": "KeyK",
       "ru": {
         "key": "л",
-        "keyUp": "Л"
+        "keyUp": "Л",
+        "capsLock": true
       }
     },
     {
@@ -407,7 +440,8 @@
       "code": "KeyL",
       "ru": {
         "key": "д",
-        "keyUp": "Д"
+        "keyUp": "Д",
+        "capsLock": true
       }
     },
     {
@@ -418,7 +452,8 @@
       "code": "Semicolon",
       "ru": {
         "key": "ж",
-        "keyUp": "Ж"
+        "keyUp": "Ж",
+        "capsLock": true
       }
     },
     {
@@ -429,7 +464,8 @@
       "code": "Quote",
       "ru": {
         "key": "э",
-        "keyUp": "Э"
+        "keyUp": "Э",
+        "capsLock": true
       }
     },
     {
@@ -458,7 +494,8 @@
       "code": "KeyZ",
       "ru": {
         "key": "я",
-        "keyUp": "Я"
+        "keyUp": "Я",
+        "capsLock": true
       }
     },
     {
@@ -469,7 +506,8 @@
       "code": "KeyX",
       "ru": {
         "key": "ч",
-        "keyUp": "Ч"
+        "keyUp": "Ч",
+        "capsLock": true
       }
     },
     {
@@ -480,7 +518,8 @@
       "code": "KeyC",
       "ru": {
         "key": "с",
-        "keyUp": "С"
+        "keyUp": "С",
+        "capsLock": true
       }
     },
     {
@@ -491,7 +530,8 @@
       "code": "KeyV",
       "ru": {
         "key": "м",
-        "keyUp": "М"
+        "keyUp": "М",
+        "capsLock": true
       }
     },
     {
@@ -502,7 +542,8 @@
       "code": "KeyB",
       "ru": {
         "key": "и",
-        "keyUp": "И"
+        "keyUp": "И",
+        "capsLock": true
       }
     },
     {
@@ -513,7 +554,8 @@
       "code": "KeyN",
       "ru": {
         "key": "т",
-        "keyUp": "Т"
+        "keyUp": "Т",
+        "capsLock": true
       }
     },
     {
@@ -524,7 +566,8 @@
       "code": "KeyM",
       "ru": {
         "key": "ь",
-        "keyUp": "Ь"
+        "keyUp": "Ь",
+        "capsLock": true
       }
     },
     {
@@ -535,7 +578,8 @@
       "code": "NumpadDecimal",
       "ru": {
         "key": "б",
-        "keyUp": "Б"
+        "keyUp": "Б",
+        "capsLock": true
       }
     },
     {
@@ -546,7 +590,8 @@
       "code": "Period",
       "ru": {
         "key": "ю",
-        "keyUp": "Ю"
+        "keyUp": "Ю",
+        "capsLock": true
       }
     },
     {
