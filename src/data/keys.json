@@ -329,7 +329,7 @@
   ],
   [
     {
-      "key": "CapsLock",
+      "key": "Caps Lock",
       "keyUp": false,
       "keyCode": 20,
       "capsLock": false,
@@ -572,7 +572,7 @@
     },
     {
       "key": ",",
-      "keyUp": "<",
+      "keyUp": "&lt;",
       "keyCode": 108,
       "capsLock": false,
       "code": "NumpadDecimal",
@@ -584,7 +584,7 @@
     },
     {
       "key": ".",
-      "keyUp": ">",
+      "keyUp": "&gt;",
       "keyCode": 190,
       "capsLock": false,
       "code": "Period",
@@ -599,7 +599,11 @@
       "keyUp": "?",
       "keyCode": 191,
       "capsLock": false,
-      "code": "Slash"
+      "code": "Slash",
+      "ru": {
+        "key": ".",
+        "keyUp": ","
+      }
     },
     {
       "key": "Shift",
@@ -608,8 +612,8 @@
       "capsLock": false,
       "code": "ShiftLeft",
       "ru": {
-        "key": ".",
-        "keyUp": ","
+        "key": "Shift",
+        "keyUp": "Shift"
       }
     }
   ],
@@ -655,7 +659,7 @@
       "ru": false
     },
     {
-      "key": "Control",
+      "key": "Ctrl",
       "keyUp": false,
       "keyCode": 17,
       "capsLock": false,

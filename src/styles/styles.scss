@@ -11,6 +11,13 @@ $color-text: #fff;
   box-sizing: border-box;
 }
 
+.keyboard-aria {
+  display: block;
+  width: 900px;
+  height: 200px;
+  margin: 0 auto;
+}
+
 .keyboard {
   max-width: 900px;
   padding: 40px;
