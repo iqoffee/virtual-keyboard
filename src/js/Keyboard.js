@@ -11,7 +11,9 @@ export default class Keyboard {
       keysRow.classList.add('keys-row', `keys-row-${i}`);
 
       arrOfkeys.forEach((keyFromArr) => {
-        keysRow.appendChild(createKey(keyFromArr, lang));
+        const keyNode = createKey(keyFromArr, lang);
+        AddEventListeners(keyNode);
+        keysRow.appendChild(keyNode);
       });
       node.appendChild(keysRow);
     });
@@ -45,4 +47,15 @@ function createKey(key, lang) {
     lang === 'en' ? keyElement.dataset.key : keyElement.dataset.keyRu;
 
   return keyElement;
+}
+
+function AddEventListeners(keyNode) {
+  keyNode.addEventListener('click', (e) => {
+    if (e.target.classList.contains('key')) {
+      e.target.classList.add('key--clicked');
+      setTimeout(() => {
+        e.target.classList.remove('key--clicked');
+      }, 100);
+    }
+  });
 }
