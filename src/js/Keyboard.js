@@ -243,7 +243,6 @@ export default class Keyboard {
   }
 
   #changeLang(keyNodes) {
-    console.log(this.lang);
     keyNodes.forEach((keyElement) => {
       if (this.#capsed) {
         if (this.lang === 'en') {

@@ -24,6 +24,8 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new ESLintPlugin(),
+    new ESLintPlugin({
+      fix: true,
+    }),
   ],
 });
