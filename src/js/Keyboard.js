@@ -276,20 +276,10 @@ export default class Keyboard {
       }
     });
     this.lang = this.lang === 'en' ? 'ru' : 'en';
+    this.#setLocalLang();
   }
 
-  // #checkCtrlAlt(keyCode, codes) {
-  //   this.#pressed.add(keyCode);
-
-  //   for (let code of codes) {
-  //     console.log(!this.#pressed.has(code));
-  //     if (!this.#pressed.has(code)) {
-  //       return;
-  //     }
-  //   }
-
-  //   this.#pressed.clear();
-
-  //   console.log(44);
-  // }
+  #setLocalLang() {
+    localStorage.setItem('lang', this.lang);
+  }
 }
