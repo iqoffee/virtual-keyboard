@@ -1,7 +1,7 @@
 import '../styles/styles.scss';
 import Keyboard from './Keyboard';
 
-let description = [
+const description = [
   'Клавиатура создавалась на Windows',
   'Для смены языка клавиша "META" на экранной клавиатуре и сочетание "Ctrl" + "Alt" на фзической',
 ];
@@ -36,7 +36,7 @@ keyboardBody.classList.add('keyboard');
 const keyboardTextarea = document.createElement('textarea');
 keyboardTextarea.readOnly = true;
 keyboardTextarea.classList.add('keyboard-aria');
-let lang = localStorage.getItem('lang') === 'ru' ? 'ru' : 'en';
+const lang = localStorage.getItem('lang') === 'ru' ? 'ru' : 'en';
 
 const keyboard = new Keyboard(keyboardTextarea, lang);
 
