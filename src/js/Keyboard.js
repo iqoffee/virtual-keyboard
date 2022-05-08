@@ -14,6 +14,8 @@ export default class Keyboard {
 
   #text = '';
 
+  #pressed = new Set();
+
   init(node) {
     this.data.forEach((arrOfkeys, i) => {
       const keysRow = document.createElement('div');
@@ -30,9 +32,11 @@ export default class Keyboard {
       node.appendChild(keysRow);
     });
 
-    const arrowUp = document.querySelector('[data-key-code="38"]');
-    const arrowDown = document.querySelector('[data-key-code="40"]');
-    const arrowRight = document.querySelector('[data-key-code="39"]');
+    this.#addKeyboardEvents(this.textArea);
+
+    const arrowUp = document.querySelector('[data-key-code="ArrowUp"]');
+    const arrowDown = document.querySelector('[data-key-code="ArrowDown"]');
+    const arrowRight = document.querySelector('[data-key-code="ArrowRight"]');
 
     const arrowsContainer = document.createElement('span');
     arrowsContainer.classList.add('arrows-container');
@@ -51,7 +55,7 @@ export default class Keyboard {
         e.target.classList.remove('key--clicked');
       }, 100);
 
-      switch (e.target.dataset.key) {
+      switch (e.target.dataset.keyCode) {
         case 'Enter':
           this.#text += '\n';
           textArea.innerHTML = this.#text;
@@ -62,7 +66,8 @@ export default class Keyboard {
           textArea.innerHTML = this.#text;
           break;
 
-        case 'Shift':
+        case 'ShiftLeft':
+        case 'ShiftRight':
           if (this.#capsed) {
             this.#capsed = !this.#capsed;
           }
@@ -70,7 +75,7 @@ export default class Keyboard {
           this.#shifted = !this.#shifted;
           break;
 
-        case 'Caps Lock':
+        case 'CapsLock':
           if (this.#shifted) {
             this.#shifted = !this.#shifted;
           }
@@ -83,12 +88,14 @@ export default class Keyboard {
           textArea.innerHTML = this.#text;
           break;
 
-        case 'Meta':
+        case 'MetaLeft':
           this.#changeLang(keyNodes);
           break;
 
-        case 'Ctrl':
-        case 'Alt':
+        case 'ControlLeft':
+        case 'AltLeft':
+        case 'ControlRight':
+        case 'AltRight':
           break;
 
         default:
@@ -98,11 +105,77 @@ export default class Keyboard {
     });
   }
 
+  #addKeyboardEvents(textArea) {
+    document.addEventListener('keydown', (e) => {
+      e.preventDefault();
+
+      this.keys.forEach((key) => {
+        if (e.code !== key.dataset.keyCode) return;
+
+        key.classList.add('key--clicked');
+        setTimeout(() => {
+          key.classList.remove('key--clicked');
+        }, 100);
+
+        switch (key.dataset.keyCode) {
+          case 'Enter':
+            this.#text += '\n';
+            textArea.innerHTML = this.#text;
+            break;
+
+          case 'Backspace':
+            this.#deleteChar();
+            textArea.innerHTML = this.#text;
+            break;
+
+          case 'ShiftLeft':
+          case 'ShiftRight':
+            if (this.#capsed) {
+              this.#capsed = !this.#capsed;
+            }
+            this.#shift(this.keys);
+            this.#shifted = !this.#shifted;
+            break;
+
+          case 'CapsLock':
+            if (this.#shifted) {
+              this.#shifted = !this.#shifted;
+            }
+            this.#caps(this.keys);
+            this.#capsed = !this.#capsed;
+            break;
+
+          case 'Tab':
+            this.#text += '\t';
+            textArea.innerHTML = this.#text;
+            break;
+
+          case 'ControlLeft':
+          case 'AltLeft':
+            if (e.altKey && e.ctrlKey) {
+              this.#changeLang(this.keys);
+            }
+
+            break;
+
+          case 'ControlRight':
+          case 'AltRight':
+          case 'MetaLeft':
+            break;
+
+          default:
+            this.#text += key.innerHTML;
+            textArea.innerHTML = this.#text;
+        }
+      });
+    });
+  }
+
   #createKey(key) {
     const keyElement = document.createElement('span');
 
     keyElement.classList.add('key');
-    keyElement.dataset.keyCode = key.keyCode;
+    keyElement.dataset.keyCode = key.code;
     keyElement.dataset.key = key.key;
     keyElement.dataset.keyRu = key.ru ? key.ru.key : key.key;
     keyElement.dataset.keyUp = key.keyUp ? key.keyUp : key.key;
@@ -201,8 +274,22 @@ export default class Keyboard {
       if (this.lang === 'ru') {
         keyElement.innerHTML = keyElement.dataset.key;
       }
-      return;
     });
     this.lang = this.lang === 'en' ? 'ru' : 'en';
   }
+
+  // #checkCtrlAlt(keyCode, codes) {
+  //   this.#pressed.add(keyCode);
+
+  //   for (let code of codes) {
+  //     console.log(!this.#pressed.has(code));
+  //     if (!this.#pressed.has(code)) {
+  //       return;
+  //     }
+  //   }
+
+  //   this.#pressed.clear();
+
+  //   console.log(44);
+  // }
 }

@@ -575,7 +575,7 @@
       "keyUp": "&lt;",
       "keyCode": 108,
       "capsLock": false,
-      "code": "NumpadDecimal",
+      "code": "Comma",
       "ru": {
         "key": "б",
         "keyUp": "Б",
@@ -610,7 +610,7 @@
       "keyUp": false,
       "keyCode": 16,
       "capsLock": false,
-      "code": "ShiftLeft",
+      "code": "ShiftRight",
       "ru": {
         "key": "Shift",
         "keyUp": "Shift"
@@ -655,7 +655,7 @@
       "keyUp": false,
       "keyCode": 18,
       "capsLock": false,
-      "code": "AltLeft",
+      "code": "AltRight",
       "ru": false
     },
     {
@@ -663,7 +663,7 @@
       "keyUp": false,
       "keyCode": 17,
       "capsLock": false,
-      "code": "ControlLeft",
+      "code": "ControlRight",
       "ru": false
     },
     {
